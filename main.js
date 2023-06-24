@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_gameboard_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/gameboard.js */ \"./src/modules/gameboard.js\");\n\r\n\r\n(0,_modules_gameboard_js__WEBPACK_IMPORTED_MODULE_0__.createGameBoard)();\r\n\r\nlet knight = document.createElement(\"img\");\r\nknight.src = \"../src/assets/knight.jpg\";\r\n\r\ndocument.getElementById(\"0,0\").append(knight);\n\n//# sourceURL=webpack://knight-travails/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_gameboard_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/gameboard.js */ \"./src/modules/gameboard.js\");\n\r\n\r\n(0,_modules_gameboard_js__WEBPACK_IMPORTED_MODULE_0__.createGameBoard)();\r\n\r\nfunction gameStart() {\r\n    let knight = document.createElement(\"img\");\r\n    knight.src = \"../src/assets/knight.jpg\";\r\n\r\n    document.getElementById(\"0,0\").append(knight);\r\n}\r\n\r\ngameStart();\n\n//# sourceURL=webpack://knight-travails/./src/index.js?");
 
 /***/ }),
 
