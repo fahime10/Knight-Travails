@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 30rem;
+    width: 30rem;
+    margin: auto auto;
+}
+
+.white-cell {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.black-cell {
+    background-color: black;
+}
