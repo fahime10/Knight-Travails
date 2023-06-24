@@ -19,3 +19,8 @@ body {
 .black-cell {
     background-color: black;
 }
+
+img {
+    width: 60%;
+    height: 100%;
+}
