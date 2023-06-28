@@ -6,13 +6,14 @@ export function gameStart() {
     let location = [0,0];
 
     let coord = "";
+    let path = "";
 
     document.querySelectorAll(".black-cell").forEach((cell) => {
         cell.addEventListener("click", () => {
             coord = cell.id.split(",").map(function(item) {
                 return parseInt(item, 10);
             });
-            move();
+            move();;
         });
     });
 
@@ -26,7 +27,8 @@ export function gameStart() {
     });
 
     function move() {
-        knightMoves(location, coord);
+        path = knightMoves(location, coord);
         location = coord;
+        document.querySelector("#path").innerHTML = path;
     }
 }
