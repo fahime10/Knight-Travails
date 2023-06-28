@@ -1,5 +1,6 @@
 export function createGameBoard() {
     let board = "";
+    let defaultLocation = [0,0];
     
     board += startBlackCell(7);
     board += startWhiteCell(6);
@@ -10,7 +11,11 @@ export function createGameBoard() {
     board += startBlackCell(1);
     board += startWhiteCell(0);
 
+    let coordArray = fillCoordArray();
+
     document.querySelector('#gameboard').innerHTML = board;
+    placeKnightInitialPos(defaultLocation);
+    console.log(`Knight's position [${defaultLocation}]`);
 }
 
 function startWhiteCell(index) {
@@ -37,4 +42,21 @@ function startBlackCell(index) {
     }
 
     return cells;
+}
+
+function fillCoordArray() {
+    let coordArray = [];
+    for (let i = 0; i < 8; i++) {
+        for (let j = 0; j < 8; j++) {
+            coordArray.push([i, j]);
+        }
+    }
+    return coordArray;
+}
+
+function placeKnightInitialPos(defaultLocation) {
+    let knight = document.createElement("img");
+    knight.src = "../src/assets/knight.jpg";
+
+    document.getElementById(`${defaultLocation}`).append(knight);
 }
