@@ -1,4 +1,3 @@
-import { createGameBoard } from "./modules/gameboard.js";
-import { knightMoves } from "./modules/search-algo.js";
+import { gameStart } from "./modules/gameController.js";
 
-createGameBoard();
+gameStart();
