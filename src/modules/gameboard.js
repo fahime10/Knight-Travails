@@ -15,18 +15,6 @@ export function createGameBoard() {
 
     document.querySelector('#gameboard').innerHTML = board;
 
-    document.querySelectorAll(".black-cell").forEach((cell) => {
-        cell.addEventListener("click", move);
-    });
-
-    document.querySelectorAll(".white-cell").forEach((cell) => {
-        cell.addEventListener("click", move);
-    });
-
-    function move() {
-        console.log("test");
-    }
-
     placeKnightInitialPos(defaultLocation);
     console.log(`Knight's position [${defaultLocation}]`);
 }

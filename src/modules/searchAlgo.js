@@ -1,4 +1,4 @@
-import { squareRegistry, chessSquare } from "./chess-square.js";
+import { squareRegistry, chessSquare } from "./chessSquare.js";
 
 //Breadth first search
 export const knightMoves = (start , end) => {
@@ -22,8 +22,16 @@ export const knightMoves = (start , end) => {
         path.unshift(prevSquare);
     }
 
+    if (path.length - 1 < 2) {
+        console.log(`The shortest path was ${path.length - 1} move!`);
+    } else {
+        console.log(`The shortest path was ${path.length - 1} moves!`);
+    }
+    
+    console.log("The moves were:");
     let squareCoord = [];
     path.forEach((square) => {
         squareCoord.push(square.name());
+        console.log(`[${square.name()}]`);
     });
 }
