@@ -40,6 +40,7 @@ export function knightMoves(start, end) {
             moveKnightImg(square.name())}, 
             1000);
         result += `<p>[${square.name()}]</p>`;
+        console.log(`[${square.name()}]`);
     });
 
     return result;
