@@ -21,7 +21,7 @@ const chessSquare = (x, y) => {
     }
 
     // Function to assign a coordinate name
-    const name = () => `${x}, ${y}`;
+    const name = () => `${x},${y}`;
 
     // Function to determine possible moves
     const possibleKnightMoves = () => {
